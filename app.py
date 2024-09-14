@@ -6,7 +6,7 @@ from ics import Calendar, Event
 from datetime import datetime, timedelta
 import json
 
-palm.configure(api_key=os.getenv("PALM_API_KEY"))
+palm.configure(api_key="AIzaSyDiF7q0-rcN1w0pGD8zQe0h7NWLLvA3Y2Q")
 models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
 model = models[0].name
 print(model)
